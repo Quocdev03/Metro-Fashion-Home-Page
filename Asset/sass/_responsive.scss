@@ -1,0 +1,70 @@
+@media screen and (max-width: 1002px) {
+    .header {
+        padding: 26px 3%;
+        transition: .3s;
+    }
+}
+
+@media screen and (max-width: 860px) {
+    .mains {
+        &-content {
+            &-caption {
+                font-size: 18px;
+                transition: .3s;
+            }
+
+            &-title {
+                font-size: 40px;
+                transition: .3s;
+            }
+
+            &-desc {
+                font-size: 16px;
+                transition: .3s;
+            }
+
+            &-button {
+                padding: 10px 16px;
+                transition: .3s;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 950px) {
+    #menu {
+        &-icon {
+            display: block;
+        }
+    }
+
+    .header {
+        &-menu {
+            position: absolute;
+            top: -600px;
+            left: 0;
+            right: 0;
+            flex-direction: column;
+            align-items: center;
+            background-color: rgba(130, 130, 130, 0.9);
+            text-align: center;
+            transition: all .40s;
+
+            &-link {
+                display: block;
+                padding: 16px;
+                margin: 8px;
+                color: #fff;
+
+                &:hover {
+                    color: #fff;
+                    opacity: .8;
+                }
+            }
+
+            &.active {
+                top: 100%;
+            }
+        }
+    }
+}

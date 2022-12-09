@@ -1,0 +1,19 @@
+.icon {
+    position: absolute;
+    top: 50%;
+    padding: 0 5%;
+    right: 10px;
+    transform: translateY(-50%);
+
+    &-link>i {
+        display: block;
+        margin: 28px 0;
+        font-size: 25px;
+        color: #000;
+        transition: .40s;
+
+        &:hover {
+            transform: translateY(-30%);
+        }
+    }
+}
